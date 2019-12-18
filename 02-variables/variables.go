@@ -60,6 +60,13 @@ func main() {
     fmt.Printf("fc = %.1f, type is %T\n", fc, fc)
     // var fe float32 = ic  // This won't work.
 
+    // Pointers only bear simple semantics.
+    n := 3
+    var p1 *int = &n
+    p2 := &n
+    *p1 = 7
+    fmt.Println(p2, *p2)
+
     // Untyped numeric constants can fit in different type contexts. Both
     // should succeed.
     needInt(Days)
