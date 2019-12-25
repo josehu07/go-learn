@@ -5,7 +5,8 @@ import "fmt"
 
 
 // Global variables.
-var (
+var me = "A student"
+var (   // Batched declaration.
     name = "Guanzhou"
     age = 100
 )
@@ -14,6 +15,11 @@ var (
 // Constants.
 const Pi = 3.14
 const Days = 365
+const (
+    One = 1
+    AlsoOne     // Omit `= xxx` means the same as previous one.
+    Two = 2
+)
 
 
 func main() {

@@ -34,6 +34,24 @@ func split(num int) (x, y int) {
 }
 
 
+// Functions are also first-class types.
+func action(fn func(int) int, num int) int {
+    return fn(num)
+}
+
+
+// Closures: functions that references variables from outside its body.
+// When a function is "bound" to an outside variable, it may access and
+// modify the variable as if it is affliated to the function.
+func adder() func(int) int {
+    sum := 0
+    return func(x int) int {
+        sum += x
+        return sum
+    }
+}
+
+
 // Execution starts at function `main`.
 func main() {
     hello()
@@ -41,4 +59,26 @@ func main() {
     fmt.Println(addFloat(1.1, 3.7))
     fmt.Println(swap("ho", "oh"))
     fmt.Println(split(572))
+
+    // Functions are also first-class types.
+    fadd := func(num int) int {     // Anonymous functions.
+        return num + 1
+    }
+    fdec := func(num int) int {
+        return num - 1
+    }
+    fmt.Println(action(fadd, 7), action(fdec, 9))
+
+    // Function closures.
+    accumulator := adder()
+    fmt.Println(accumulator(2))
+    fmt.Println(accumulator(3))
+    fmt.Println(accumulator(9))
 }
+
+
+// NOTE: Multiple-line comments can also be written as:
+/*
+ Lalala.
+ Hahaha.
+ */
