@@ -23,4 +23,4 @@ Each sub-folder contains essential coding concepts, syntax and examples related 
 - Golang official site: [https://golang.org/](https://golang.org/)
 - Go package documentation: [https://golang.org/pkg/](https://golang.org/pkg/)
 - Go detailed tutorial (Chinese): [http://c.biancheng.net/golang/](http://c.biancheng.net/golang/)
-- A list of lot more: [https://tour.golang.org/concurrency/11](https://tour.golang.org/concurrency/11)
+- A list of a lot more: [https://tour.golang.org/concurrency/11](https://tour.golang.org/concurrency/11)
