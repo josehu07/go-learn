@@ -31,8 +31,8 @@ func Crawl(url string, depth int, fetcher Fetcher, tried *SafeSet,
 		defer tried.mux.Unlock()
 		return
 	}
-	tried.mux.Unlock()
 	tried.has[url] = true
+	tried.mux.Unlock()
 	
 	// If not, fetch this page and crawl deeper from it.
 	body, urls, err := fetcher.Fetch(url)
