@@ -3,9 +3,9 @@
 > Jose @ ShanghaiTech
 
 
-![](https://img.shields.io/github/languages/count/hgz12345ssdlh/go-learn.svg?color=brightgreen)
-![https://www.golang.org/](https://img.shields.io/github/languages/top/hgz12345ssdlh/go-learn.svg?color=lightblue)
-![](https://img.shields.io/github/languages/code-size/hgz12345ssdlh/go-learn.svg)
+![languages](https://img.shields.io/github/languages/count/josehu07/go-learn.svg?color=green)
+![top-lang](https://img.shields.io/github/languages/top/josehu07/go-learn.svg?color=lightblue)
+![code-size](https://img.shields.io/github/languages/code-size/josehu07/go-learn.svg?color=lightgrey)
 
 
 ## Contents
